@@ -1,78 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sketching and Arts Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#">About Us</a>
-        <a href="https://forms.gle/ztnGcqXAkEZ6nHH98">Order a sketch</a>
-        <a href="https://linktr.ee/rose_arts31?fbclid=PAAaZ-OTgMTVWrRcVqmY2arvINY74aME0C-L0T1ZSsQ40rYsxnbjw-_U4y6O0">Social Media</a>
-      </nav>
-    </header>
+<html>
+<head>
+	<title>Sketching Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#about"><img src="1.jpg" alt="Sketching Website"></a>
+			</div>
+			<div class="container">
+			<h3>Rose Arts</h3>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="https://linktr.ee/rose_arts31?fbclid=PAAaZ-OTgMTVWrRcVqmY2arvINY74aME0C-L0T1ZSsQ40rYsxnbjw-_U4y6O0">Social Media</a></li>
+				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeyUdYZa4-DEcZrFIHogsYNJhUbkDhpnxEFoZLWbfHD1v7Krg/viewform">Order</a></li>
+			</ul>
+		</div>
+	</header>
 
-    <main>
-      <section class="hero">
-        <h1>Sketching and Arts</h1>
-        <p>Learn to draw, paint, and create amazing art with our tutorials, courses, and community.</p>
-        <button>Join Us</button>
-      </section>
+	<section class="hero">
+		<div class="container">
+			<h1>Welcome to our Sketching Website</h1>
+			<p>Explore the world of sketching and discover your creativity.</p>
+			<a href="gallery.html" class="btn">View Gallery</a>
+		</div>
+	</section>
 
-      <section class="features">
-        <div class="feature">
-          <h2>Tutorials</h2>
-          <p>Watch our tutorials and learn new techniques, tips, and tricks to improve your art skills.</p>
-          <a href="#">Learn More</a>
+	<section id="gallery">
+		<div class="container">
+			<h2>Gallery</h2>
+			<ul class="gallery-items">
+				<li>
+					<a href="1.jpg">
+						<img src="1.jpg" alt="Sketch 1">
+						<!-- <p>Sketch 1</p> -->
+					</a>
+					<p>This is a sketch of a landscape drawn using colored pencils.</p>
+				</li>
+				<li>
+					<a href="2.jpg">
+						<img src="2.jpg" alt="Sketch 2">
+						<p>Sketch 2</p>
+					</a>
+				</li>
+				<li>
+					<a href="3.jpg">
+						<img src="3.jpg" alt="Sketch 3">
+						<p>Sketch 3</p>
+					</a>
+				</li>
+				<li>
+					<a href="4.jpg">
+						<img src="4.jpg" alt="Sketch 4">
+						<p>Sketch 4</p>
+					</a>
+				</li>
+			</ul>
+			<div class="gallery-description">
+				<h3>Sketch 1</h3>
+			</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h2>About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet suscipit justo. Aliquam eget ante nisl. Donec eget urna quis leo luctus ullamcorper.</p>
+		</div>
+	</section>
+
+	<!-- <section id="social-media">
+		<div class="container">
+			<h2>Follow Us on Social Media</h2>
+			<ul class="social-media-icons">
+				<li><a href="https://github.com//"><img src="facebook" alt="Facebook"></a></li>
+				<li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+				<li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+				<li><a href="#"><img src="pinterest.png" alt="Pinterest"></a></li>
+			</ul> -->
+	
+    <!-- <section id="order">
+        <div class="container">
+            <h2>Order Your Sketch Now</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="sketch-type">Sketch Type:</label>
+                <select id="sketch-type" name="sketch-type" required>
+                    <option value="">Select Sketch Type</option>
+                    <option value="page-sheet">Page Sheet (Black and White)</option>
+                    <option value="colored-sheet">Page Sheet (Colored)</option>
+                    <option value="couple-sheet">Couple Sketch (Black and White)</option>
+                    <option value="colored-couple-sheet">Couple Sketch (Colored)</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+                <input type="submit" value="Calculate Price" class="btn">
+            </form>
         </div>
-
-        <div class="feature">
-          <h2>Order</h2>
-          <p>Take our courses and master new art styles, from sketching to painting to digital art.</p>
-          <a href="#">Learn More</a>
-        </div>
-
-        <div class="feature">
-          <h2>Community</h2>
-          <p>Join our community of artists and get feedback, support, and inspiration to help you grow.</p>
-          <a href="community.html">Learn More</a>
-        </div>
-      </section>
-
-      <section class="testimonials">
-        <h2>What Our Students Say</h2>
-
-        <div class="testimonial">
-          <p>"Sketching and Arts helped me to take my art to the next level. I'm so glad I joined!"</p>
-          <span>John Doe</span>
-        </div>
-
-        <div class="testimonial">
-          <p>"The tutorials are amazing! I learned so much and I'm excited to try out the new techniques."</p>
-          <span>Jane Smith</span>
-        </div>
-
-        <div class="testimonial">
-          <p>"The community is so supportive and helpful. I feel like I'm part of a family of artists."</p>
-          <span>Mike Johnson</span>
-        </div>
-      </section>
-    </main>
-
+    </section> -->
     <footer>
-      <nav>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </nav>
-      <p>© 2023 Sketching and Arts. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 Sketching Website. All rights reserved.</p>
+        </div>
     </footer>
-
+    
     <script src="script.js"></script>
-  </body>
-</html>
+</body>
+</html>    
